@@ -2,6 +2,7 @@
   "name": "device-info-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "classnames": "^2.3.2",
     "nxtuple-react-scripts": "5.0.1",
