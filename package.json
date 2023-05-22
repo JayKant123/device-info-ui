@@ -1,0 +1,61 @@
+{
+  "name": "device-info-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "nxtuple-react-scripts": "5.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:cov": "react-scripts test --coverage --watchAll=false",
+    "lint": "npm run prettier && npm run lint:js && npm run lint:css",
+    "prettier": "prettier 'src/**/**/*.?(js)' --write",
+    "lint:js": "eslint src --ext .js --cache --fix || true",
+    "lint:css": "stylelint 'src/**/*.css' --cache --fix || true",
+    "jsreport": "eslint src --ext .js --cache -f json -o eslint-report.json; exit 0",
+    "cssreport": "stylelint 'src/**/*.css' --cache -f json -o stylelint-report.json; exit 0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^26.9.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-css-modules": "^4.2.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-scss": "^4.6.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "html",
+      "lcov"
+    ],
+    "coveragePathIgnorePatterns": [],
+    "resetMocks": false
+  }
+}
